@@ -1,0 +1,12 @@
+<h2>DoCheck Example</h2>
+
+
+<table border ="1"  cellpadding="8" cellspacing=n"0">
+  <tr *ngFor =" let emp of employeeArray ; let i = index">
+    <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td><button  (click)="Remove(i)">Remove</button></td>
+      <td><button (click)="Update(i)">Update</button></td>
+
+  </tr>
+</table>
